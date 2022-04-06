@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { CgMouse } from 'react-icons/all';
 import "./Home.css";
 import ProductCard from "./ProductCard.js";
 import MetaData from '../layout/MetaData';
@@ -39,7 +38,7 @@ const Home = () => {
                         <h1>FIND AMAZING PRODUCTS BELOW</h1>
                         <a href='#container'>
                             <button>
-                                Scroll <CgMouse />
+                                Scroll
                             </button>
                         </a>
                     </div>
