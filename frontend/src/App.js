@@ -29,6 +29,15 @@ import { loadStripe } from "@stripe/stripe-js";
 import OrderSuccess from "./component/Cart/OrderSuccess";
 import MyOrders from "./component/Order/MyOrders";
 import OrderDetails from "./component/Order/OrderDetails";
+import Dashboard from "./component/Admin/Dashboard";
+import ProductList from "./component/Admin/ProductList"
+import NewProduct from './component/Admin/NewProduct';
+import UpdateProduct from "./component/Admin/UpdateProduct";
+import OrderList from "./component/Admin/OrderList"
+import ProcessOrder from "./component/Admin/ProcessOrder";
+import UsersList from "./component/Admin/UsersList";
+import UpdateUser from "./component/Admin/UpdateUser";
+import ProductReviews from "./component/Admin/ProductReviews";
 
 
 function App() {
@@ -89,6 +98,19 @@ function App() {
         <ProtectedRoute exact path="/order/confirm" component={ConfirmOrder} />
         <ProtectedRoute exact path="/order/:id" component={OrderDetails} />
       </Switch>
+
+      <ProtectedRoute isAdmin={true} exact path="/admin/dashboard" component={Dashboard} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/products" component={ProductList} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/product" component={NewProduct} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/product/:id" component={UpdateProduct} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/orders" component={OrderList} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/order/:id" component={ProcessOrder} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/users" component={UsersList} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/user/:id" component={UpdateUser} />
+      <ProtectedRoute isAdmin={true} exact path="/admin/reviews" component={ProductReviews} />
+
+
+
 
 
       <Footer />
