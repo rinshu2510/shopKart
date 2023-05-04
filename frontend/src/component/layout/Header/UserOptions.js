@@ -69,8 +69,9 @@ const UserOptions = ({ user }) => {
                 onOpen={() => setOpen(true)}
                 style={{ zIndex: "11" }}
                 open={open}
-                direction="down"
+                direction="up"
                 className='speedDial'
+                sx={{ position: 'absolute', bottom: 16, right: 16 }}
                 icon={<img
                     className='speedDialIcon'
                     src={user.avatar.url ? user.avatar.url : "/Profile.png"}

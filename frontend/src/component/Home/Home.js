@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { CgMouse } from 'react-icons/all';
 import "./Home.css";
 import ProductCard from "./ProductCard.js";
 import MetaData from '../layout/MetaData';
@@ -7,7 +6,7 @@ import { clearErrors, getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from '../layout/Loader/Loader';
 import { useAlert } from 'react-alert';
-
+import MouseIcon from '@mui/icons-material/Mouse';
 
 const Home = () => {
 
@@ -39,7 +38,7 @@ const Home = () => {
                         <h1>FIND AMAZING PRODUCTS BELOW</h1>
                         <a href='#container'>
                             <button>
-                                Scroll <CgMouse />
+                                Scroll <MouseIcon/>
                             </button>
                         </a>
                     </div>
