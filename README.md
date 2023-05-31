@@ -38,20 +38,40 @@ Essential Variables PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET
 # Screenshot
 
 ![Screenshot (1626)](https://github.com/rinshu2510/shopKart/assets/65297197/0d3dde08-a87d-4a82-9281-2addef0c0745)
+# Home Page of the webapp
+
 ![Screenshot (1627)](https://github.com/rinshu2510/shopKart/assets/65297197/7bca72d7-9f41-4a84-a4cf-8bf011e2b915)
+# some feature products on the home page
+
 ![Screenshot (1515)](https://github.com/rinshu2510/shopKart/assets/65297197/2444de66-bb3f-467f-84f2-3c95cf96cad4)
+# Register page where user can register
+
 ![Screenshot (1516)](https://github.com/rinshu2510/shopKart/assets/65297197/97dc6dae-29b3-46bf-a6a0-2cd10db1a2ce)
+# Login page to log in to the website
+
 ![Screenshot (1514)](https://github.com/rinshu2510/shopKart/assets/65297197/679b2741-f2e2-4843-b135-27692fd941f2)
+# Profile page of the user after he/she login into the website
+
 ![Screenshot (1628)](https://github.com/rinshu2510/shopKart/assets/65297197/0891fc4a-af3d-4083-a01e-356274a0ae7d)
+# user can update their name, email, profile photo
+
 ![Screenshot (1558)](https://github.com/rinshu2510/shopKart/assets/65297197/a96ac9da-5418-4787-a5fb-2c33c2bdf119)
+# user can also update their password
+
 ![Screenshot (1629)](https://github.com/rinshu2510/shopKart/assets/65297197/961719d7-790d-4bee-81d4-9fccc1c90eff)
+# Speedial will be created after a user gets login into the website and user can go to different section of the website by using speedial like home page, search page, cart page, order page etc.
 
 ![Screenshot (1568)](https://github.com/rinshu2510/shopKart/assets/65297197/1a34240a-15f0-45a2-971a-6731aac9c10b)
-![Screenshot (1504)](https://github.com/rinshu2510/shopKart/assets/65297197/2c26aa86-a905-4728-95b6-b627fbc2e712)
-![Screenshot (1505)](https://github.com/rinshu2510/shopKart/assets/65297197/bc473a5a-994c-4d9e-8963-bf45930e495a)!
-![Screenshot (1567)](https://github.com/rinshu2510/shopKart/assets/65297197/3d3f08c9-d05b-45aa-8edd-f60fa3db2a31)
+# Speedial shown at the bottom of every page after login
 
-[Screenshot (1631)](https://github.com/rinshu2510/shopKart/assets/65297197/ce09edbd-df63-408d-a072-a7efbe139cdb)
+![Screenshot (1504)](https://github.com/rinshu2510/shopKart/assets/65297197/2c26aa86-a905-4728-95b6-b627fbc2e712)
+![Screenshot (1505)](https://github.com/rinshu2510/shopKart/assets/65297197/bc473a5a-994c-4d9e-8963-bf45930e495a)
+# product page of the website where user can see all the products and can use filter to filter out products of their choice
+
+![Screenshot (1567)](https://github.com/rinshu2510/shopKart/assets/65297197/3d3f08c9-d05b-45aa-8edd-f60fa3db2a31)
+# search page where user can search the product listed on the website
+
+![Screenshot (1631)](https://github.com/rinshu2510/shopKart/assets/65297197/ce09edbd-df63-408d-a072-a7efbe139cdb)
 ![Screenshot (1632)](https://github.com/rinshu2510/shopKart/assets/65297197/efb3e2a4-d68f-48f7-818c-3740a4bacfdf)
 ![Screenshot (1633)](https://github.com/rinshu2510/shopKart/assets/65297197/4f78cc5c-bbb3-4367-8e49-703087546eef)!
 [Screenshot (1634)](https://github.com/rinshu2510/shopKart/assets/65297197/095d8fb4-ad4d-4e5c-8fa2-885e0c0403b0)
