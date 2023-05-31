@@ -1,15 +1,16 @@
-.banner {
+.banner{
   background-image: url("../../images/cover.jfif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vmin;
+  height: 89.7vmin;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
   color: white;
+
 }
 
 .banner > h1 {

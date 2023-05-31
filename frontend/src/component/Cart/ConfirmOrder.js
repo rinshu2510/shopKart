@@ -4,8 +4,8 @@ import { useSelector } from "react-redux";
 import MetaData from "../layout/MetaData";
 import "./ConfirmOrder.css";
 import { Link } from "react-router-dom";
-import { Typography } from "@material-ui/core";
 
+import { Typography } from '@mui/material';
 
 const ConfirmOrder = ({ history }) => {
 
@@ -17,15 +17,15 @@ const ConfirmOrder = ({ history }) => {
         0
     );
 
-    const shippingCharges = subtotal > 1000 ? 0 : 200;
+    const shippingCharges = subtotal > 1000 ? 0 : 30;
 
-    const tax = subtotal * 0.18;
+    const tax = subtotal * 0.05;
 
     const totalPrice = subtotal + tax + shippingCharges;
 
     const address = `${shippingInfo.address}, ${shippingInfo.city}, ${shippingInfo.state}, ${shippingInfo.pinCode}, ${shippingInfo.country}`;
 
-    const proceedToPayment = () => {
+    const proceedToPaymentStripe = () => {
         const data = {
             subtotal,
             shippingCharges,
@@ -35,8 +35,9 @@ const ConfirmOrder = ({ history }) => {
 
         sessionStorage.setItem("orderInfo", JSON.stringify(data));
 
-        history.push("/process/payment");
+        history.push("/process/paymentStripe");
     };
+
 
     return (
         <>
@@ -106,7 +107,11 @@ const ConfirmOrder = ({ history }) => {
                             <span>₹{totalPrice}</span>
                         </div>
 
-                        <button onClick={proceedToPayment}>Proceed To Payment</button>
+                        <button onClick={proceedToPaymentStripe}>
+                            <span style={{ float: "left" }}>Proceed with Debit Card</span>
+                            <span style={{ float: "right" }}>₹{totalPrice}</span>
+                        </button>
+                        
                     </div>
                 </div>
             </div>

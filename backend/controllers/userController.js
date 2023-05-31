@@ -22,7 +22,21 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     // console.log("hello2")
     const { name, email, password } = req.body;
     // console.log("hello3")
-
+    const myPasswordHandler = (password) => {
+        let pass = password;
+        var checkSpecial = /[*@!#%&()^~{}]+/.test(pass),
+            checkUpper = /[A-Z]+/.test(pass),
+            checkLower = /[a-z]+/.test(pass),
+            chechNumeral = /\d/.test(pass)
+        if (checkSpecial && checkUpper && checkLower && chechNumeral) {
+            return true
+        }
+        else
+            return false
+    }
+    if (!myPasswordHandler(password)) {
+        return next(new ErrorHandler("Include at least one uppercase, lowercase, one number and one symbol(! @ # $ % & ')", 400));
+    }
     const user = await User.create({
         name, email, password,
         avatar: {

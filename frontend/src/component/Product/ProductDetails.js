@@ -28,7 +28,7 @@ const ProductDetails = ({ match }) => {
     const { success, error: reviewError } = useSelector(
         (state) => state.newReview
     );
-
+        
     const options = {
         value: product.ratings,
         readOnly: true,

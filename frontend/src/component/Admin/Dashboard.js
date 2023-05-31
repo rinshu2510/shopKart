@@ -17,7 +17,7 @@ const Dashboard = () => {
     const { products } = useSelector((state) => state.products);
     const { orders } = useSelector((state) => state.allOrders);
     const { users } = useSelector((state) => state.allUsers);
-
+    
     let outOfStock = 0;
 
     products &&
@@ -26,7 +26,12 @@ const Dashboard = () => {
                 outOfStock += 1;
             }
         });
-
+    var totalAmount =0 ;
+    products &&
+        products.forEach((item) => {
+            totalAmount += (item.stock*item.price)
+          
+        });
     useEffect(() => {
         dispatch(getAdminProduct());
         dispatch(getAllOrders());
@@ -40,7 +45,7 @@ const Dashboard = () => {
                 label: "TOTAL AMOUNT",
                 backgroundColor: ["tomato"],
                 hoverBackgroundColor: ["rgb(197, 72, 49)"],
-                data: [0, 4000],
+                data: [0, totalAmount],
             },
         ],
     };
@@ -51,7 +56,7 @@ const Dashboard = () => {
             {
                 backgroundColor: ["#00A6B4", "#6800B4"],
                 hoverBackgroundColor: ["#4B5000", "#35014F"],
-                data: [outOfStock, products.length - outOfStock],
+                data: [outOfStock, products?.length - outOfStock],
             },
         ],
     };
@@ -69,8 +74,8 @@ const Dashboard = () => {
                 <div className="dashboardSummary">
                     <div>
                         <p>
-                            {/* Total Amount <br /> ₹{totalAmount} */}
-                            Total Amount <br /> ₹2000
+                            Total Amount <br /> ₹{totalAmount}
+                            
 
                         </p>
                     </div>
@@ -87,7 +92,7 @@ const Dashboard = () => {
                         <Link to="/admin/users">
                             <p>Users</p>
                             <p>{users && users.length}</p>
-                            
+
                         </Link>
                     </div>
                 </div>

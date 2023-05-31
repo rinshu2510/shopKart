@@ -35,6 +35,7 @@ const NewProduct = ({ history }) => {
         "Attire",
         "Camera",
         "SmartPhones",
+        "Book",
     ];
 
     useEffect(() => {

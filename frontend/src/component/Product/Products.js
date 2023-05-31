@@ -12,12 +12,13 @@ import MetaData from "../../component/layout/MetaData";
 
 const categories = [
     "Laptop",
-    "phone",
-    "book",
+    "Bottom",
+    "Attire",
     "Footwear",
     "Tops",
     "Camera",
     "SmartPhones",
+    "Book"
 ]
 
 const Products = ({ match }) => {
@@ -33,7 +34,7 @@ const Products = ({ match }) => {
     const { products, loading, error, productsCount, resultPerPage } = useSelector((state) => state.products);
 
     const keyword = match.params.keyword;
-
+    console.log(products)
     const setCurrentPageNo = (e) => {
         setCurrentPage(e);
     }
@@ -53,8 +54,10 @@ const Products = ({ match }) => {
 
     return (
         <>
+
             {loading ? <Loader /> : (
                 <>
+                
                     <MetaData title="PRODUCTS --ECOMMERCE" />
                     <h2 className='productsHeading' style={{}}>Products</h2>
                     <div className="products">

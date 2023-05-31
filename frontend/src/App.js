@@ -16,7 +16,6 @@ import { useSelector } from 'react-redux';
 import Profile from "./component/User/Profile";
 import ProtectedRoute from './component/Route/ProtectedRoute';
 import UpdateProfile from "./component/User/UpdateProfile"
-import UpdatePassword from "./component/User/UpdatePassword"
 import ForgetPassword from "./component/User/ForgotPassword"
 import ResetPassword from "./component/User/ResetPassword"
 import Cart from "./component/Cart/Cart"
@@ -38,7 +37,7 @@ import ProcessOrder from "./component/Admin/ProcessOrder";
 import UsersList from "./component/Admin/UsersList";
 import UpdateUser from "./component/Admin/UpdateUser";
 import ProductReviews from "./component/Admin/ProductReviews";
-
+import UpdPassword from './component/User/UpdPassword'
 
 function App() {
 
@@ -68,7 +67,7 @@ function App() {
       {isAuthenticated && <UserOptions user={user} />}
       {stripeApiKey && (
         <Elements stripe={loadStripe(stripeApiKey)}>
-          <ProtectedRoute exact path="/process/payment" component={Payment} />
+          <ProtectedRoute exact path="/process/paymentStripe" component={Payment} />
         </Elements>
       )}
 
@@ -80,14 +79,14 @@ function App() {
 
       <ProtectedRoute exact path="/account" component={Profile} />
       <ProtectedRoute exact path="/me/update" component={UpdateProfile} />
-      <ProtectedRoute exact path="/password/update" component={UpdatePassword} />
+      <ProtectedRoute exact path="/password/update" component={UpdPassword} />
 
       <Route exact path="/password/forgot" component={ForgetPassword} />
       <Route exact path="/password/reset/:token" component={ResetPassword} />
 
 
       <Route exact path="/login" component={LoginSignUp} />
-      <Route exact path="/Cart" component={Cart} />
+      <ProtectedRoute exact path="/Cart" component={Cart} />
       <ProtectedRoute exact path="/shipping" component={Shipping} />
 
       <ProtectedRoute exact path="/success" component={OrderSuccess} />
@@ -108,7 +107,6 @@ function App() {
       <ProtectedRoute isAdmin={true} exact path="/admin/users" component={UsersList} />
       <ProtectedRoute isAdmin={true} exact path="/admin/user/:id" component={UpdateUser} />
       <ProtectedRoute isAdmin={true} exact path="/admin/reviews" component={ProductReviews} />
-
 
 
 

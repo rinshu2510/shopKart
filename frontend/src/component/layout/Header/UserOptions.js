@@ -11,7 +11,8 @@ import { useHistory } from "react-router-dom";
 import { useAlert } from 'react-alert';
 import { logout } from '../../../actions/userAction';
 import { useDispatch, useSelector } from "react-redux";
-
+import SearchIcon from '@mui/icons-material/Search'
+import HomeIcon from '@mui/icons-material/Home'
 
 const UserOptions = ({ user }) => {
 
@@ -23,6 +24,8 @@ const UserOptions = ({ user }) => {
     const alert = useAlert();
 
     const options = [
+        { icon: <SearchIcon />, name: 'Search', func: search },
+        { icon: <HomeIcon />, name: 'Home', func: home },
         { icon: <ListAltIcon />, name: "Orders", func: orders },
         { icon: <PersonIcon />, name: "Profile", func: account },
         {
@@ -42,7 +45,12 @@ const UserOptions = ({ user }) => {
 
         )
     }
-
+    function search() {
+        history.push("/search")
+    }
+    function home() {
+        history.push("/")
+    }
     function dashboard() {
         history.push("/admin/dashboard")
     }
@@ -56,6 +64,7 @@ const UserOptions = ({ user }) => {
         history.push("/cart")
     }
     function logoutUser() {
+        localStorage.clear()
         dispatch(logout())
         alert.success("Logout Successfully")
     }

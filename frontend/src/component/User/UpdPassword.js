@@ -1,21 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 import Loader from "../layout/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
-import { clearErrors, updatePassword } from "../../actions/userAction";
-import { useAlert } from "react-alert";
-import './UpdatePassword.css';
-import { UPDATE_PASSWORD_RESET } from "../../constants/userConstants";
 import MetaData from "../layout/MetaData";
+import './UpdatePassword.css';
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import LockIcon from "@material-ui/icons/Lock";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
+import { useAlert } from "react-alert";
+import { clearErrors, updatePassword } from "../../actions/userAction";
+import { UPDATE_PASSWORD_RESET } from "../../constants/userConstants";
 
 
-const UpdatePassword = ({ history }) => {
-
+const UpdPassword = ({history}) =>{
     const dispatch = useDispatch();
     const alert = useAlert();
-
     const { error, isUpdated, loading } = useSelector((state) => state.profile);
 
     const [oldPassword, setOldPassword] = useState("");
@@ -52,9 +50,9 @@ const UpdatePassword = ({ history }) => {
         }
     }, [dispatch, error, alert, history, isUpdated]);
 
-    return (
+    return(
         <>
-            {loading ? (
+        {loading ? (
                 <Loader />
             ) : (
                 <>
@@ -109,7 +107,7 @@ const UpdatePassword = ({ history }) => {
                 </>
             )}
         </>
-    );
-};
+    )
+}
 
-export default UpdatePassword;
+export default UpdPassword;

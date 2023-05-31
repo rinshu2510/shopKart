@@ -20,6 +20,7 @@ const Profile = ({ history }) => {
             ) : (
                 <Fragment>
                     <MetaData title={`${user.name}'s Profile`} />
+                    
                     <div className="profileContainer">
                         <div>
                             <h1>My Profile</h1>
@@ -41,10 +42,10 @@ const Profile = ({ history }) => {
                             </div>
 
                             <div>
-                                {/* <Link to="/orders">My Orders</Link>
-                                <Link to="/password/update">Change Password</Link> */}
-                                 <Link to="#">My Orders</Link>
-                                <Link to="#">Change Password</Link> 
+                                <Link to="/orders">My Orders</Link>
+                                <Link to="/password/update">Change Password</Link>
+                                 {/* <Link to="#">My Orders</Link>
+                                <Link to="#">Change Password</Link>  */}
                             </div>
                         </div>
                     </div>
