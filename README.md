@@ -1,7 +1,7 @@
 # MERN BASED E-COMMERCE WEBSITE(shopKart)
 It is an e-commerce webapp to buy your favourite products.
 
-# Functionality
+# Functionality:
 
 Allow user to register and login.
 
@@ -15,7 +15,7 @@ Allow user to update their profile and password.
 
 Allow user to view the status of their Order. 
 
-Allowing user to pay debit card.
+Allowing user to pay using debit card.
 
 Each payment can be authorized using Stripe.
 
@@ -29,19 +29,16 @@ For Backend - npm i
 
 For Frontend - cd frontend npm i
 
-# Env Variables
+# Env Variables:
 
 Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
 
 Essential Variables PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET= JWT_EXPIRE= COOKIE_EXPIRE= SMPT_SERVICE = SMPT_MAIL= SMPT_PASSWORD= SMPT_HOST= SMPT_PORT= CLOUDINARY_NAME CLOUDINARY_API_KEY CLOUDINARY_API_SECRET fill each filed with your info respectively
 
-# Screenshot
-
-![Screenshot (1626)](https://github.com/rinshu2510/shopKart/assets/65297197/0d3dde08-a87d-4a82-9281-2addef0c0745)
-# Home Page of the webapp
-
-![Screenshot (1627)](https://github.com/rinshu2510/shopKart/assets/65297197/7bca72d7-9f41-4a84-a4cf-8bf011e2b915)
-# some feature products on the home page
+# Screenshots
+![Screenshot (1637)](https://github.com/rinshu2510/shopKart/assets/65297197/a254c28e-8bcc-4830-908e-3db391064261)
+![Screenshot (1638)](https://github.com/rinshu2510/shopKart/assets/65297197/9adf7f55-2537-4d81-bba5-20767a1bf75a)
+# Home Page of the webapp and some featured products on the home page
 
 ![Screenshot (1515)](https://github.com/rinshu2510/shopKart/assets/65297197/2444de66-bb3f-467f-84f2-3c95cf96cad4)
 # Register page where user can register
@@ -50,7 +47,7 @@ Essential Variables PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET
 # Login page to log in to the website
 
 ![Screenshot (1514)](https://github.com/rinshu2510/shopKart/assets/65297197/679b2741-f2e2-4843-b135-27692fd941f2)
-# Profile page of the user after he/she login into the website
+# Profile page of the user after he/she logged in to the website
 
 ![Screenshot (1628)](https://github.com/rinshu2510/shopKart/assets/65297197/0891fc4a-af3d-4083-a01e-356274a0ae7d)
 # user can update their name, email, profile photo
@@ -78,7 +75,7 @@ Essential Variables PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET
 # review given by the users of the product
 
 ![Screenshot (1633)](https://github.com/rinshu2510/shopKart/assets/65297197/4f78cc5c-bbb3-4367-8e49-703087546eef)
-# user can go to the card page after adding the product into the cart by using speedial
+# user can go to the cart page after adding the product into the cart by using speedial
 
 ![Screenshot (1634)](https://github.com/rinshu2510/shopKart/assets/65297197/095d8fb4-ad4d-4e5c-8fa2-885e0c0403b0)
 # cart page where user can remove, add more quantity of the product and checkout to buy the product
@@ -99,11 +96,21 @@ Essential Variables PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET
 # order page where user can view their orders
 
 ![Screenshot (1560)](https://github.com/rinshu2510/shopKart/assets/65297197/d0a0ac34-9bfd-44de-b142-f4af04be1ab1)
+![Screenshot (1561)](https://github.com/rinshu2510/shopKart/assets/65297197/c826f06f-8419-4bcd-aa1c-30b474a96a15)
+# Admin dashboard page that contain information about total product, price, total user, total no. of out of stock items etc.
 
-![Screenshot (1561)](https://github.com/rinshu2510/shopKart/assets/65297197/c0f5b70f-b875-43a8-8c32-d6eda0609100)
 ![Screenshot (1563)](https://github.com/rinshu2510/shopKart/assets/65297197/c537717d-bdb0-4640-b5d3-5b0b0d8b9bfa)
+# Admin can create product that will be shown in products page.
+
 ![Screenshot (1562)](https://github.com/rinshu2510/shopKart/assets/65297197/77131eb0-dc23-4de6-8707-75cce8ceb25f)
+# Admin can track record of all the products in this website and can edit,delete the products if required.
+
 ![Screenshot (1635)](https://github.com/rinshu2510/shopKart/assets/65297197/2600eab3-cf92-41b8-a555-a0afbe9aaa17)
+# Admin can track all the orders whether it is delivered or not and can update the status of orders.
+
 ![Screenshot (1565)](https://github.com/rinshu2510/shopKart/assets/65297197/4c0d0d8c-4371-4cf6-b17a-090558fd4dbe)
+# Admin can see how many users are registered and can delete the user and make admin if needed.
+
 ![Screenshot (1566)](https://github.com/rinshu2510/shopKart/assets/65297197/460989aa-db73-4c9d-8a52-5ac432ea193f)
+# Admin have access to read all the reviews and delete the review if any abusive/inappropriate review is written.
 
