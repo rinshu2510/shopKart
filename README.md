@@ -1,7 +1,31 @@
-# shopKart
+# MERN BASED E-COMMERCE WEBSITE(shopKart)
 It is an e-commerce webapp to buy your favourite products.
 
-# MERN BASED E-COMMERCE WEBSITE
+# FUNCTIONALITY
+
+Allow user to register and login.
+
+Allow user to buy goods online.
+
+Allow user to Submit reviews of the products bought.
+
+Allow user to filter the products according to price, categories, rating.
+
+Allow user to update their profile and password.
+
+Allow user to view the status of their Order. 
+
+Allowing user to pay debit card.
+
+Each payment can be authorized using Stripe.
+
+Admin have the access to add, delete, edit products details.
+
+Admin can analyse revenue, manage orders of user,have access to delete review and user.
+
+
+
+# TO USE
 
 For Backend - npm i
 
