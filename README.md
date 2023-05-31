@@ -72,15 +72,34 @@ Essential Variables PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET
 # search page where user can search the product listed on the website
 
 ![Screenshot (1631)](https://github.com/rinshu2510/shopKart/assets/65297197/ce09edbd-df63-408d-a072-a7efbe139cdb)
+# description of the product
+
 ![Screenshot (1632)](https://github.com/rinshu2510/shopKart/assets/65297197/efb3e2a4-d68f-48f7-818c-3740a4bacfdf)
-![Screenshot (1633)](https://github.com/rinshu2510/shopKart/assets/65297197/4f78cc5c-bbb3-4367-8e49-703087546eef)!
-[Screenshot (1634)](https://github.com/rinshu2510/shopKart/assets/65297197/095d8fb4-ad4d-4e5c-8fa2-885e0c0403b0)
+# review given by the users of the product
+
+![Screenshot (1633)](https://github.com/rinshu2510/shopKart/assets/65297197/4f78cc5c-bbb3-4367-8e49-703087546eef)
+# user can go to the card page after adding the product into the cart by using speedial
+
+![Screenshot (1634)](https://github.com/rinshu2510/shopKart/assets/65297197/095d8fb4-ad4d-4e5c-8fa2-885e0c0403b0)
+# cart page where user can remove, add more quantity of the product and checkout to buy the product
+
 ![Screenshot (1622)](https://github.com/rinshu2510/shopKart/assets/65297197/d313026e-7c89-41f8-92a0-a2db234ff379)
+# shiping details where user want to get the product
+
 ![Screenshot (1623)](https://github.com/rinshu2510/shopKart/assets/65297197/345f9195-0764-4c1a-96be-4ec497d34db0)
+# confirm order page where user check all the details and proceed for payment
+
 ![Screenshot (1624)](https://github.com/rinshu2510/shopKart/assets/65297197/18087687-488e-4518-86d7-9e4cbc3f3d85)
+# payment using debit card
+
 ![Screenshot (1625)](https://github.com/rinshu2510/shopKart/assets/65297197/8adff100-de8e-4c83-9ad2-76738bf7cb90)
-![Screenshot (1636)](https://github.com/rinshu2510/shopKart/assets/65297197/0af07f67-4c68-4b11-bd38-715495f0f329)!
-[Screenshot (1560)](https://github.com/rinshu2510/shopKart/assets/65297197/d0a0ac34-9bfd-44de-b142-f4af04be1ab1)
+# order confirmation of the product  
+
+![Screenshot (1636)](https://github.com/rinshu2510/shopKart/assets/65297197/0af07f67-4c68-4b11-bd38-715495f0f329)
+# order page where user can view their orders
+
+![Screenshot (1560)](https://github.com/rinshu2510/shopKart/assets/65297197/d0a0ac34-9bfd-44de-b142-f4af04be1ab1)
+
 ![Screenshot (1561)](https://github.com/rinshu2510/shopKart/assets/65297197/c0f5b70f-b875-43a8-8c32-d6eda0609100)
 ![Screenshot (1563)](https://github.com/rinshu2510/shopKart/assets/65297197/c537717d-bdb0-4640-b5d3-5b0b0d8b9bfa)
 ![Screenshot (1562)](https://github.com/rinshu2510/shopKart/assets/65297197/77131eb0-dc23-4de6-8707-75cce8ceb25f)
